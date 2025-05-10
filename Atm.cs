@@ -8,7 +8,7 @@ public string Pin { get; set; }
 public double Balance { get; set; }
 public List<string> Transactions { get; set; }
 
-```
+
 public User(string name, string pin, double balance)
 {
     Name = name;
@@ -17,7 +17,7 @@ public User(string name, string pin, double balance)
     Transactions = new List<string>();
 }
 
-```
+
 
 }
 
@@ -29,7 +29,6 @@ static Dictionary<string, User> users = new Dictionary<string, User>()
 { "5678", new User("John", "5678", 1500.0) }
 };
 
-```
 static User currentUser = null;
 
 static void Main()
@@ -202,6 +201,5 @@ static void Pause()
     Console.ReadLine();
 }
 
-```
 
 }
